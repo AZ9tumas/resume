@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Resume Template
+% Version 2.0 (pdflatex compatible)
+%
+% This template is robust and designed to compile with standard LaTeX editors.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt, letterpaper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+% --- FONT CONFIGURATION ---
+% Use Helvetica as the primary font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- PAGE LAYOUT ---
+\geometry{
+    a4paper,
+    left=0.75in,
+    right=0.75in,
+    top=0.5in,
+    bottom=0.5in,
+    footskip=.25in
+}
+
+% --- CUSTOMIZATION ---
+% Define hyperlink colors (subtle blue)
+\definecolor{linkcolor}{HTML}{0056b3}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkcolor,
+    linkcolor=linkcolor
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Define section formatting (line below section title)
+\titleformat{\section}
+    {\bfseries\large\scshape\raggedright}
+    {}
+    {0em}
+    {}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+% Define custom list environment for experience/projects
+\setlist[itemize]{
+    leftmargin=*,
+    label=\textbullet,
+    noitemsep,
+    topsep=0pt,
+    partopsep=0pt
+}
+
+% Custom command for subheadings (e.g., job titles)
+\newcommand{\resumeSubheading}[3]{%
+    \item
+    \begin{tabularx}{\textwidth}{@{}l X r@{}}
+        \textbf{#1} & \textit{\small #2} & \textit{\small #3}
+    \end{tabularx}%
+}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge\bfseries\scshape Rounak Das}
+    \vspace{3pt}
+    
+    \small
+    \faMapMarker* Prayagraj, Uttar Pradesh \quad
+    \faPhone\ +91 87774 73417 \quad
+    \href{mailto:rounakdas2025@gmail.com}{\faEnvelope\ rounakdas2025@gmail.com} \\[3pt]
+    \href{https://az9tumas.github.io/my-portfolio/}{\faGlobe\ az9tumas.github.io/my-portfolio} \quad
+    \href{https://linkedin.com/in/rounak-das-600a99315}{\faLinkedin\ linkedin.com/in/rounak-das-600a99315} \quad
+    \href{https://github.com/az9tumas}{\faGithub\ github.com/az9tumas}
+\end{center}
+\vspace{-2pt}
+
+% --- SUMMARY ---
+\section*{Summary}
+Computer Science undergraduate with strong project-based experience in AI-driven applications, game development, and system/software architecture. Built machine learning prototypes, gameplay systems, and full-stack tools using Python, C++ and Lua, with emphasis on performance, debugging, and maintainable code. Currently seeking internships where I can deepen my work on AI and high-performance software systems.
+
+% --- TECHNICAL SKILLS ---
+\section*{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X}
+    \textbf{Languages} & Python, C/C++, Lua, JavaScript/TypeScript, Java, SQL \\
+    \textbf{Frameworks \& Libraries} & React.js, Node.js, ShadCN, NumPy, Pandas, Scikit-learn, Firebase, SDL \\
+    \textbf{Developer Tools} & Git/GitHub, Neovim, Roblox Studio, Docker, Linux Terminal, CI/CD (GitHub Actions) \\
+    \textbf{Platforms \& OS} & Windows, Linux, MacOS \\
+    \textbf{Core Competencies} & Data Structures and Algorithms (DSA), Object-Oriented Programming (OOPs), System Design, Compiler Design, Network Configuration \& Troubleshooting \\
+\end{tabularx}
+
+% --- PROFESSIONAL EXPERIENCE ---
+\section*{Professional Experience}
+\begin{itemize}
+    \resumeSubheading
+        {Freelance Game Developer}
+        {Roblox Platform}
+        {May 2021 -- Present}
+    \begin{itemize}
+        \item Architected and engineered systems for 15+ game titles, leading development from concept to deployment in collaboration with artists and designers.
+        \item Implemented robust, scalable datastore systems ensuring data integrity and persistence for thousands of concurrent users.
+        \item Developed modular combat frameworks and custom physics for movement and vehicle mechanics (air/water), enhancing gameplay and user engagement.
+        \item Engineered complex NPC AI using pathfinding (A*) and finite state machines, creating dynamic and responsive game environments.
+    \end{itemize}
+\end{itemize}
+
+% --- PERSONAL PROJECTS ---
+\section*{Personal Projects}
+\begin{itemize}
+    \resumeSubheading
+        {Bytecode Programming Language}
+        {C++, Compiler Design}
+        {2022}
+    \begin{itemize}
+        \item Designed and built a custom bytecode-interpreted programming language from scratch, featuring a compiler and a virtual machine for execution.
+        \item Implemented support for core language features, including global/local variables, function calls, and control flow structures.
+    \end{itemize}
+
+    \resumeSubheading
+        {Game Boy Color Emulator}
+        {C/C++, System Architecture}
+        {Ongoing}
+    \begin{itemize}
+        \item Developed a functional CPU emulator for the Game Boy Color, focusing on instruction set accuracy and performance optimization.
+        \item Successfully passed standard CPU validation tests, demonstrating a deep understanding of low-level system architecture.
+    \end{itemize}
+
+    \resumeSubheading
+        {Full-Stack Web Applications}
+        {React.js, Node.js, Web Frameworks}
+        {Oct 2024 -- Present}
+    \begin{itemize}
+        \item Participated in college hackathons to build full-stack applications, including a collaborative study app and a real-time attendance tracker.
+        \item Explored and implemented both front-end and back-end frameworks to deliver complete web solutions.
+    \end{itemize}
+    
+     \resumeSubheading
+        {Open Source Contributions}
+        {Embedded Systems, Python}
+        {Ongoing}
+    \begin{itemize}
+        \item Contributed to the PocketPy project, an embedded programming ecosystem, by submitting bug fixes and feature enhancements.
+    \end{itemize}
+\end{itemize}
+
+% --- EDUCATION ---
+\section*{Education}
+\begin{itemize}
+    \resumeSubheading
+        {Motilal Nehru National Institute of Technology (MNNIT)}
+        {Prayagraj, India}
+        {Expected May 2028}
+    \item[] \textit{Bachelor of Technology in Computer Science \& Engineering}
+    
+    \resumeSubheading
+        {Indian School Muscat}
+        {Muscat, Oman}
+        {Graduated Apr 2024}
+    \item[] \textit{Higher Secondary Examination (CBSE) -- Scored 95.4\%}
+\end{itemize}
+
+% --- ACHIEVEMENTS & AWARDS ---
+\section*{Achievements \& Awards}
+\begin{itemize}[label={}]
+    \item \textbf{Chairman's Award (2024):} Awarded for achieving the highest grade (A1) in all subjects in the national CBSE board examinations.
+    \item \textbf{Principal's Award for Academic Excellence (2024):} Recognized for outstanding overall scholastic performance in Class 12.
+\end{itemize}
+
+\end{document}
