@@ -90,30 +90,30 @@
 
 % --- SUMMARY ---
 \section*{Summary}
-Computer Science undergraduate with strong project-based experience in AI-driven applications, game development, and system/software architecture. Built machine learning prototypes, gameplay systems, and full-stack tools using Python, C++ and Lua, with emphasis on performance, debugging, and maintainable code. Currently seeking internships where I can deepen my work on AI and high-performance software systems.
+Computer Science undergraduate at MNNIT Allahabad with 4+ years of applied experience as a lead programmer in game development. Shipped 5+ Roblox titles including games with 50M+ visits and 1,500+ concurrent players. Currently seeking software engineering internships across systems programming and data science.
 
 % --- TECHNICAL SKILLS ---
 \section*{Technical Skills}
 \begin{tabularx}{\textwidth}{@{}l X}
-    \textbf{Languages} & Python, C/C++, Lua, JavaScript/TypeScript, Java, SQL \\
-    \textbf{Frameworks \& Libraries} & React.js, Node.js, ShadCN, NumPy, Pandas, Scikit-learn, Firebase, SDL \\
-    \textbf{Developer Tools} & Git/GitHub, Neovim, Roblox Studio, Docker, Linux Terminal, CI/CD (GitHub Actions) \\
+    \textbf{Languages} & Python, C/C++, Lua \\
+    \textbf{Frameworks \& Libraries} & NumPy, Pandas, Scikit-learn, Statsmodels (ARIMA), Matplotlib, SDL \\
+    \textbf{Developer Tools} & Git/GitHub, Neovim, Roblox Studio, Linux Terminal, CI/CD (GitHub Actions) \\
     \textbf{Platforms \& OS} & Windows, Linux, MacOS \\
-    \textbf{Core Competencies} & Data Structures and Algorithms (DSA), Object-Oriented Programming (OOPs), System Design, Compiler Design, Network Configuration \& Troubleshooting \\
+    \textbf{Core Competencies} & Data Structures and Algorithms (DSA), Object-Oriented Programming (OOPs), System Design, Compiler Design \\
 \end{tabularx}
 
 % --- PROFESSIONAL EXPERIENCE ---
 \section*{Professional Experience}
 \begin{itemize}
     \resumeSubheading
-        {Freelance Game Developer}
+        {Lead Programmer, Freelance Game Developer}
         {Roblox Platform}
         {May 2021 -- Present}
     \begin{itemize}
-        \item Architected and engineered systems for 15+ game titles, leading development from concept to deployment in collaboration with artists and designers.
-        \item Implemented robust, scalable datastore systems ensuring data integrity and persistence for thousands of concurrent users.
-        \item Developed modular combat frameworks and custom physics for movement and vehicle mechanics (air/water), enhancing gameplay and user engagement.
-        \item Engineered complex NPC AI using pathfinding (A*) and finite state machines, creating dynamic and responsive game environments.
+        \item Led end-to-end development of 5+ shipped titles, including games that reached 50M+ total visits and sustained 1,500+ concurrent players.
+        \item Engineered fault-tolerant datastore pipelines with rollback safeguards, maintaining data integrity and zero-loss persistence under peak concurrent load.
+        \item Implemented reusable, modular combat and physics frameworks covering airborne, aquatic, and ground vehicle mechanics.
+        \item Designed NPC AI systems using A* pathfinding and finite state machines that scaled adaptively across varied map layouts and game genres.
     \end{itemize}
 \end{itemize}
 
@@ -121,38 +121,30 @@ Computer Science undergraduate with strong project-based experience in AI-driven
 \section*{Personal Projects}
 \begin{itemize}
     \resumeSubheading
-        {Bytecode Programming Language}
-        {C++, Compiler Design}
-        {2022}
-    \begin{itemize}
-        \item Designed and built a custom bytecode-interpreted programming language from scratch, featuring a compiler and a virtual machine for execution.
-        \item Implemented support for core language features, including global/local variables, function calls, and control flow structures.
-    \end{itemize}
-
-    \resumeSubheading
-        {Game Boy Color Emulator}
-        {C/C++, System Architecture}
+        {\href{https://github.com/AZ9tumas/gbc2}{Game Boy Color Emulator}}
+        {C, System Architecture}
         {2023}
     \begin{itemize}
-        \item Developed a functional CPU emulator for the Game Boy Color, focusing on instruction set accuracy and performance optimization.
-        \item Successfully passed standard CPU validation tests, demonstrating a deep understanding of low-level system architecture.
+        \item Implemented a cycle-accurate Sharp LR35902 CPU emulator in C/C++, correctly handling the full instruction set and memory-mapped I/O.
+        \item Passed the Blargg CPU instruction test suite in full, validating correctness against a standardized benchmark covering edge cases in real Game Boy Color ROM execution.
     \end{itemize}
 
     \resumeSubheading
-        {Full-Stack Web Applications}
-        {React.js, Node.js, Web Frameworks}
-        {Oct 2024}
+        {\href{https://github.com/AZ9tumas/Time-Series-Project}{Stock Price Prediction via Time Series Analysis}}
+        {Python, ARIMA, SARIMA, Pandas, NumPy, Streamlit, Plotly}
+        {2025--2026}
     \begin{itemize}
-        \item Participated in college hackathons to build full-stack applications, including a collaborative study app and a real-time attendance tracker.
-        \item Explored and implemented both front-end and back-end frameworks to deliver complete web solutions.
+        \item Built a modular Streamlit forecasting app implementing 5 models (ARIMA, SARIMA, Seasonal Naive, Moving Average, Historic Mean) on AAPL, META, and MSFT stock data, achieving 98.4\% directional accuracy on a held-out test set.
+        \item Automated ARIMA/SARIMA hyperparameter selection (p, d, q) from ACF/PACF analysis and ADF stationarity tests, eliminating hardcoded parameters and enabling data-driven model configuration.
     \end{itemize}
     
      \resumeSubheading
         {Open Source Contributions}
-        {Embedded Systems, Python}
-        {Ongoing}
+        {C, R, Data Visualization, Embedded Systems}
+        {Oct 2025 -- Ongoing}
     \begin{itemize}
-        \item Contributed to the PocketPy project, an embedded programming ecosystem, by submitting bug fixes and feature enhancements.
+        \item Implemented broadcasting for tensor \texttt{matmul} on 3D and 4D matrices in \href{https://github.com/pocketpy/cTensor/pull/45}{cTensor} (a C tensor library), extending the operator to handle arbitrary batch dimensions and writing a comprehensive test suite covering edge cases across dimension combinations; PR merged with 819 additions.
+        \item Traced a root-cause compiler-side bug in \href{https://github.com/animint/animint2/pull/319}{animint2}, an R interactive data visualization library: identified that \texttt{compute\_domains()} fails for \texttt{geom\_bar} because \texttt{built\_data} exposes raw columns (\texttt{x}, \texttt{y}) while the domain lookup expects \texttt{xmin}/\texttt{xmax}/\texttt{ymin}/\texttt{ymax}; added a regression test and a diagnostic warning surfacing the missing columns.
     \end{itemize}
 \end{itemize}
 
